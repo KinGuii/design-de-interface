@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartão (Card)</title>
+    <style>
+        html,
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+
+        .cartao {
+            width: 12.6rem;
+            height: 28rem;
+            padding: 1rem;
+            margin: 5rem auto;
+            border-radius: .7rem;
+            border: .1rem #9d98e0 solid;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 2px 2px 2px 1px rgba(29, 28, 71, 0.63);
+        }
+
+        .titulo {
+            margin: 0 0 1rem 0;
+            text-align: center;
+            border-radius: .7rem;
+            border: .1rem #433ca5 transparent;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 2px 2px 2px 1px rgba(50, 48, 128, 0.63);
+        }
+
+        .imagem {
+            width: 12.5rem;
+            height: 14rem;
+            border-radius: 0.5rem;
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            color: rgb(255, 254, 254);
+            padding: .3rem 2rem;
+            background-color: rgb(98, 0, 255);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(41, 1, 78);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cartao">
+        <h1 class="titulo">Julia</h1>
+        <div class="corpo">
+            <img class="imagem" src="Julia.jpg" alt="imagem do cartão" />
+            <p>
+                Profissional de marketing experiente, com histórico comprovado em estratégias de marketing digital e
+                análise de dados.
+
+            </p>
+            <div>
+                <footer class="rodape">
+                    <a href="curriculo.html">Currículo</a>
+                    <button>OK</button>
+                </footer>
+            </div>
+</body>
+
+</html>
