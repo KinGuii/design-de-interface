@@ -1,0 +1,49 @@
+body {
+    background-color: coral;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: coral;
+}
+
+.descricao {
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    background-color: coral;
+    padding: 10px;
+}
+
+.imagem {
+    margin: 20px;
+    display: inline-block;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imagem p {
+    margin: 10px 0;
+    color: white;
+}

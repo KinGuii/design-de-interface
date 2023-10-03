@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte e Design</title>
+    <style>
+        body {
+            background-color: coral;
+            font-family: Arial, Helvetica, sans-serif, Helvetica;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        header {
+            background-color: rgb(0, 59, 74);
+            padding: 20px;
+        }
+
+        h1 {
+            color: coral;
+        }
+
+        .descricao {
+            padding: 20px;
+            color: rgb(0, 59, 74);
+            font-style: italic;
+            /* Adicionando itálico */
+            text-align: justify;
+            /* Justificando o texto */
+            max-width: 600px;
+            float: left;
+            /* Alinhando o texto à esquerda */
+        }
+
+        .galeria {
+            padding: 20px;
+        }
+
+        .imagem {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .imagem img {
+            max-width: 200px;
+            /* Reduzindo o tamanho das imagens padrão */
+            height: auto;
+            border: 5px solid rgb(0, 59, 74);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .imagem p {
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        /* Estilo para a primeira imagem */
+        .imagem:first-child img {
+            max-width: 300px;
+            float: left;
+            /* Alinhando a primeira imagem à esquerda */
+            margin-right: 20px;
+            /* Espaço à direita da imagem */
+            margin-top: -30px;
+            /* Subindo a primeira imagem */
+        }
+
+        /* Estilo para a segunda imagem aumentada */
+        .imagem:nth-child(2) img {
+            max-width: 500px;
+            /* Aumentando o tamanho da segunda imagem */
+        }
+
+        /* Estilo para a área de imagens de 2 a 6 */
+        .area-imagens-2-6 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .area-imagens-2-6 .imagem {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .area-imagens-2-6 .imagem img {
+            max-width: 250px;
+            /* Aumentando o tamanho das imagens de 2 a 6 */
+            transition: transform 0.2s;
+            /* Adicionando uma transição suave ao passar o mouse sobre as imagens */
+            cursor: pointer;
+            /* Alterando o cursor ao passar o mouse sobre as imagens */
+        }
+
+        .area-imagens-2-6 .imagem img:hover {
+            transform: scale(1.5);
+            /* Aumentando um pouco o tamanho ao passar o mouse sobre as imagens */
+        }
+         /* Estilo para a barra azul no final da página */
+         .barra-azul {
+            background-color: rgb(0, 59, 74);
+            color: coral;
+            padding: 20px;
+         }
+            </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Arte e Design</h1>
+    </header>
+    <section class="descricao">
+        <p><em>Na dança dos traços e das cores, a arte se revela como um suspiro da alma, um eco do coração humano. Ela
+                transcende o tempo e o espaço, contando histórias sem palavras, mas repletas de emoção.</em></p>
+        <p><em>O design, por sua vez, é o arquiteto das ideias, o mestre das formas. Ele molda o mundo ao nosso redor,
+                transformando o comum em extraordinário, o funcional em belo.</em></p>
+        <p><em>Juntos, arte e design dançam em harmonia, criando um universo onde a estética se encontra com a
+                funcionalidade. Cada obra é um convite para explorar o inexplorado, uma janela para o sublime, uma ponte
+                entre o sonho e a realidade.</em></p>
+        <p><em>Assim, a arte e o design se entrelaçam, enriquecendo nossas vidas com beleza e significado. São a
+                expressão máxima da criatividade humana, uma celebração da imaginação e da inovação que nos guiam em
+                direção a um mundo mais inspirador e apaixonante.</em></p>
+    </section>
+    <section class="galeria">
+        <div class="descricao-imagem">
+            <div class="descricao">
+                <!-- Texto descritivo da primeira imagem -->
+                <p><em></em></p>
+            </div>
+            <div class="imagem">
+                <!-- Primeira imagem -->
+                <img src="imagem1.jpg" alt="Obra de Arte 1">
+                <p></p>
+            </div>
+        </div>
+        <!-- Área para imagens de 2 a 6 -->
+        <div class="area-imagens-2-6">
+            <div class="imagem">
+                <!-- Segunda imagem -->
+                <img src="imagem2.jpg" alt="Obra de Arte 2">
+                <p></p>
+            </div>
+            <div class="imagem">
+                <!-- Terceira imagem -->
+                <img src="imagem3.jpg" alt="Obra de Arte 3">
+                <p></p>
+            </div>
+            <div class="imagem">
+                <!-- Quarta imagem -->
+                <img src="imagem4.jpg" alt="Obra de Arte 4">
+                <p></p>
+            </div>
+            <div class="imagem">
+                <!-- Quinta imagem -->
+                <img src="imagem5.jpg" alt="Obra de Arte 5">
+                <p></p>
+            </div>
+            <div class="imagem">
+                <!-- Sexta imagem -->
+                <img src="imagem6.jpg" alt="Obra de Arte 6">
+                <p></p>
+            </div>
+        </div>
+    </section>
+</body>
+</section>
+<!-- Barra azul no final da página com agradecimento -->
+<div class="barra-azul">
+    <p>Obrigado por visitar nossa página de Arte e Design!</p>
+</div>
+</body>
+</html>
