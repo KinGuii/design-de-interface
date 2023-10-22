@@ -1,0 +1,28 @@
+/* Estilize a tabela */
+#notasTable {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#notasTable th,
+#notasTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #fff;
+    /* Defina a cor de fundo padrão */
+}
+
+#notasTable th {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+
+/* Estilize as células quando o mouse passa sobre as colunas */
+#notasTable th:hover,
+#notasTable td:hover {
+    background-color: #365e70;
+    /* Define a cor de fundo quando passa o mouse */
+}
