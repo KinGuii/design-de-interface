@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+
+<body>
+    <h1>Exercício 7</h1>
+
+    <!-- Exercício 1 -->
+    <h2>1. Calcular Idade e Projeções</h2>
+    <label for="anoNascimento">Ano de Nascimento:</label>
+    <input type="number" id="anoNascimento">
+
+    <label for="anoAtual">Ano Atual:</label>
+    <input type="number" id="anoAtual">
+
+    <button onclick="calcularIdadeEProjecoes()">Calcular</button>
+
+    <div id="resultado1"></div>
+
+    <!-- Exercício 2 -->
+    <h2>2. Calcular Novo Salário</h2>
+    <label for="salario">Salário do Funcionário:</label>
+    <input type="number" id="salario">
+    <button onclick="calcularNovoSalario()">Calcular Novo Salário</button>
+    <div id="novoSalario"></div>
+
+    <!-- Exercício 3 -->
+    <h2>3. Converter Temperatura</h2>
+    <label for="temperaturaCelsius">Temperatura em Celsius:</label>
+    <input type="number" id="temperaturaCelsius">
+    <button onclick="converterParaFahrenheit()">Converter para Fahrenheit</button>
+    <div id="temperaturaFahrenheit"></div>
+
+    <!-- Exercício 4 -->
+    <h2>4. Calcular Média Aritmética</h2>
+    <label for="nota1">Nota 1:</label>
+    <input type="number" id="nota1">
+    <label for="nota2">Nota 2:</label>
+    <input type="number" id="nota2">
+    <label for="nota3">Nota 3:</label>
+    <input type="number" id="nota3">
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <div id="media"></div>
+
+    <!-- Exercício 5 -->
+    <h2>5. Calcular Hipotenusa</h2>
+    <label for="catetoA">Cateto A:</label>
+    <input type="number" id="catetoA">
+    <label for="catetoB">Cateto B:</label>
+    <input type="number" id="catetoB">
+    <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+    <div id="hipotenusa"></div>
+
+    <!-- Exercício 6 -->
+    <h2>6. Calcular Propriedades da Esfera</h2>
+    <label for="raioEsfera">Raio da Esfera:</label>
+    <input type="number" id="raioEsfera">
+    <button onclick="calcularEsfera()">Calcular</button>
+    <div id="comprimento"></div>
+    <div id="area"></div>
+    <div id="volume"></div>
+
+    <script>
+        function calcularIdadeEProjecoes() {
+            const anoNascimento = parseInt(document.getElementById("anoNascimento").value);
+            const anoAtual = parseInt(document.getElementById("anoAtual").value);
+            const idadeAtual = anoAtual - anoNascimento;
+            const idade2050 = 2050 - anoNascimento;
+            document.getElementById("resultado1").innerHTML = `Idade atual: ${idadeAtual} anos<br>Idade em 2050: ${idade2050} anos`;
+        }
+
+        function calcularNovoSalario() {
+            const salario = parseFloat(document.getElementById("salario").value);
+            const novoSalario = salario * 1.25;
+            document.getElementById("novoSalario").innerHTML = `Novo Salário: R$ ${novoSalario.toFixed(2)}`;
+        }
+
+        function converterParaFahrenheit() {
+            const temperaturaCelsius = parseFloat(document.getElementById("temperaturaCelsius").value);
+            const temperaturaFahrenheit = (temperaturaCelsius * 1.8) + 32;
+            document.getElementById("temperaturaFahrenheit").innerHTML = `Temperatura em Fahrenheit: ${temperaturaFahrenheit.toFixed(2)}°F`;
+        }
+
+        function calcularMedia() {
+            const nota1 = parseFloat(document.getElementById("nota1").value);
+            const nota2 = parseFloat(document.getElementById("nota2").value);
+            const nota3 = parseFloat(document.getElementById("nota3").value);
+            const media = (nota1 + nota2 + nota3) / 3;
+            document.getElementById("media").innerHTML = `Média: ${media.toFixed(2)}`;
+        }
+
+        function calcularHipotenusa() {
+            const catetoA = parseFloat(document.getElementById("catetoA").value);
+            const catetoB = parseFloat(document.getElementById("catetoB").value);
+            const hipotenusa = Math.sqrt(catetoA * catetoA + catetoB * catetoB);
+            document.getElementById("hipotenusa").innerHTML = `Hipotenusa: ${hipotenusa.toFixed(2)}`;
+        }
+
+        function calcularEsfera() {
+            const raio = parseFloat(document.getElementById("raioEsfera").value);
+            const comprimento = 2 * Math.PI * raio;
+            const area = Math.PI * Math.pow(raio, 2);
+            const volume = (3 / 4) * Math.PI * Math.pow(raio, 3);
+            document.getElementById("comprimento").innerHTML = `Comprimento: ${comprimento.toFixed(2)}`;
+            document.getElementById("area").innerHTML = `Área: ${area.toFixed(2)}`;
+            document.getElementById("volume").innerHTML = `Volume: ${volume.toFixed(2)}`;
+        }
+    </script>
+<link rel="stylesheet" href="styles.css">
+
+</body>
+
+
+</html>
