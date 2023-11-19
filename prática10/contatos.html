@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos - Confeitaria Maria Chocolate</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <!-- Seu cabeçalho permanece o mesmo -->
+    </header>
+    <nav>
+        <!-- Seu menu de navegação permanece o mesmo -->
+    </nav>
+    <section id="contatos-section">
+        <form id="contato-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="button" onclick="enviarMensagem()">Enviar Mensagem</button>
+        </form>
+    </section>
+    <footer>
+        <!-- Seu rodapé permanece o mesmo -->
+    </footer>
+<!-- ... Seu código HTML existente ... -->
+<button type="button" id="enviarBtn">Enviar Mensagem</button>
+<!-- ... Seu código HTML existente ... -->
+
+    <!-- Adição do link para o arquivo JavaScript -->
+    <script src="contatos.js"></script>
+    
+</body>
+
+</html>
